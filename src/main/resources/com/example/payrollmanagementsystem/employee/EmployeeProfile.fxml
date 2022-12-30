@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="background" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.payrollmanagementsystem.employee.Profile">
+   <children>
+      <Text layoutX="275.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="idField" editable="false" focusTraversable="false" layoutX="400.0" layoutY="206.0" styleClass="custom-text-field" />
+      <TextField fx:id="nameField" editable="false" focusTraversable="false" layoutX="400.0" layoutY="246.0" styleClass="custom-text-field" />
+      <Text layoutX="275.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="mailField" editable="false" focusTraversable="false" layoutX="400.0" layoutY="286.0" styleClass="custom-text-field" />
+      <Text layoutX="275.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="mobileField" editable="false" focusTraversable="false" layoutX="400.0" layoutY="395.0" styleClass="custom-text-field" />
+      <Text layoutX="275.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Province">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="provinceField" editable="false" focusTraversable="false" layoutX="400.0" layoutY="435.0" styleClass="custom-text-field" />
+      <Text layoutX="275.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <Text layoutX="275.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="cityField" editable="false" focusTraversable="false" layoutX="400.0" layoutY="475.0" styleClass="custom-text-field" />
+      <Text layoutX="600.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="branchField" editable="false" focusTraversable="false" layoutX="700.0" layoutY="206.0" styleClass="custom-text-field" />
+      <Text layoutX="600.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="titleField" editable="false" focusTraversable="false" layoutX="700.0" layoutY="246.0" styleClass="custom-text-field" />
+      <Text layoutX="600.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade ID">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="gradeField" editable="false" focusTraversable="false" layoutX="700.0" layoutY="395.0" styleClass="custom-text-field" />
+      <Text layoutX="600.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="salaryField" editable="false" focusTraversable="false" layoutX="700.0" layoutY="435.0" styleClass="custom-text-field" />
+      <Text layoutX="600.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IBAN">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Text>
+      <TextField fx:id="ibanField" editable="false" focusTraversable="false" layoutX="700.0" layoutY="475.0" styleClass="custom-text-field" />
+      <AnchorPane prefHeight="606.0" prefWidth="225.0" styleClass="emp-side-nav" stylesheets="@../styles.css">
+         <children>
+            <Button fx:id="backBtn" layoutX="20.0" layoutY="60.0" mnemonicParsing="false" onAction="#navigateBack" prefHeight="26.0" prefWidth="182.0" styleClass="back-button" stylesheets="@../styles.css" text="Back">
+               <font>
+                  <Font name="Avenir Next Bold" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Text layoutX="275.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Info">
+         <font>
+            <Font name="Avenir Next Bold" size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="275.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Info">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="275.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="600.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="600.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

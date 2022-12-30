@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="background" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.payrollmanagementsystem.employee.Dashboard">
+   <children>
+      <Button fx:id="requestLeaveBtn" layoutX="485.0" layoutY="380.0" mnemonicParsing="false" onAction="#navigateRequestLeave" prefWidth="130.0" styleClass="dashboard-buttons" text="Request Leave" />
+      <Button fx:id="requestStatusBtn" layoutX="485.0" layoutY="420.0" mnemonicParsing="false" onAction="#navigateRequestStatus" prefWidth="130.0" styleClass="dashboard-buttons" text="Requests Status" />
+      <Button fx:id="salaryReportsBtn" layoutX="680.0" layoutY="380.0" mnemonicParsing="false" onAction="#navigateSalaryReport" prefWidth="130.0" styleClass="dashboard-buttons" text="View Salaries" />
+      <Button fx:id="changePasswordBtn" layoutX="280.0" layoutY="420.0" mnemonicParsing="false" onAction="#navigateChangePassword" prefWidth="130.0" styleClass="dashboard-buttons" text="Change Password" />
+      <Button fx:id="profileBtn" layoutX="280.0" layoutY="380.0" mnemonicParsing="false" onAction="#navigateProfile" prefWidth="130.0" styleClass="dashboard-buttons" text="View Profile" />
+      <AnchorPane prefHeight="606.0" prefWidth="225.0" styleClass="emp-dashboard-side-nav">
+         <children>
+            <Button fx:id="logoutBtn" layoutX="48.0" layoutY="532.0" mnemonicParsing="false" onAction="#logout" prefHeight="20.0" prefWidth="130.0" stylesheets="@../styles.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Book" size="13.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="dashboard-logout" />
+                  <String fx:value="mouse-moved-logout" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="41.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../imgs/marmara.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Text layoutX="274.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Dashboard">
+         <font>
+            <Font name="Avenir Next Bold" size="34.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="452.0" layoutY="120.0" prefHeight="170.0" prefWidth="240.0" styleClass="statsComponent" stylesheets="@../styles.css">
+         <children>
+            <Text fill="WHITE" layoutX="19.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department">
+               <font>
+                  <Font name="Avenir Book" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="empDepartmentLabel" layoutX="17.0" layoutY="68.0" prefHeight="35.0" prefWidth="216.0" text="Marketing" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Next Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="712.0" layoutY="120.0" prefHeight="170.0" prefWidth="160.0" styleClass="statsComponent" stylesheets="@../styles.css">
+         <children>
+            <Text fill="WHITE" layoutX="19.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level">
+               <font>
+                  <Font name="Avenir Book" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="empGradeLabel" layoutX="17.0" layoutY="68.0" prefHeight="20.0" prefWidth="137.0" text="Grade V" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Next Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="270.0" layoutY="120.0" prefHeight="170.0" prefWidth="160.0" styleClass="statsComponent" stylesheets="@../styles.css">
+         <children>
+            <Text fill="WHITE" layoutX="19.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
+               <font>
+                  <Font name="Avenir Book" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="empIDLabel" layoutX="19.0" layoutY="58.0" prefHeight="70.0" prefWidth="127.0" text="65" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Next Bold" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text layoutX="280.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account">
+         <font>
+            <Font name="Avenir Next Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="485.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leaves">
+         <font>
+            <Font name="Avenir Next Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="680.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receipts">
+         <font>
+            <Font name="Avenir Next Bold" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="empNameLabel" layoutX="770.0" layoutY="43.0" text="Employee Name">
+         <font>
+            <Font name="Avenir Book" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="profilePicture" fitHeight="53.0" fitWidth="49.0" layoutX="710.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/hussain/IdeaProjects/PayrollManagementSystem/src/main/imgs/admin.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

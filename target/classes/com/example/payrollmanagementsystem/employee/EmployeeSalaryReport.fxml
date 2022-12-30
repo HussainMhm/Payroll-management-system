@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.payrollmanagementsystem.employee.SalaryReport">
+   <children>
+      <TableView fx:id="paymentsTable" layoutX="250.0" layoutY="232.0" prefHeight="250.0" prefWidth="620.0" stylesheets="@../styles.css">
+         <columns>
+            <TableColumn fx:id="paymentID" prefWidth="100.0" text="Payment ID" />
+            <TableColumn fx:id="empID" prefWidth="100.0" text="EmployeeID" />
+            <TableColumn fx:id="month" prefWidth="100.0" text="Month" />
+            <TableColumn fx:id="year" prefWidth="73.0" text="Year" />
+            <TableColumn fx:id="leave" prefWidth="97.0" text="Leave Days" />
+            <TableColumn fx:id="amount" prefWidth="130.0" text="Payment Amount" />
+         </columns>
+      </TableView>
+      <Button fx:id="showAllBtn" layoutX="461.0" layoutY="171.0" mnemonicParsing="false" onAction="#showPayments" styleClass="refresh-button" stylesheets="@../styles.css" text="Refresh" />
+      <AnchorPane layoutY="-3.0" prefHeight="606.0" prefWidth="225.0" styleClass="emp-side-nav" stylesheets="@../styles.css" />
+      <Text layoutX="250.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary Report">
+         <font>
+            <Font name="Avenir Next Bold" size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="250.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary Payment Records">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="backBtn" layoutX="20.0" layoutY="60.0" mnemonicParsing="false" onAction="#navigateBack" prefHeight="26.0" prefWidth="182.0" styleClass="back-button" stylesheets="@../styles.css" text="Back">
+         <font>
+            <Font name="Avenir Next Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

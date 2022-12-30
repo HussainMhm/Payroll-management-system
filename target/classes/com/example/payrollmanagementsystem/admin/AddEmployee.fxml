@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="background" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.payrollmanagementsystem.admin.AddEmployee">
+   <children>
+      <TextField fx:id="name" layoutX="275.0" layoutY="180.0" prefHeight="32.0" prefWidth="200.0" promptText="Name" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <TextField fx:id="mobile" layoutX="275.0" layoutY="220.0" prefHeight="32.0" prefWidth="200.0" promptText="Mobile" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <TextField fx:id="mail" layoutX="275.0" layoutY="260.0" prefHeight="32.0" prefWidth="200.0" promptText="Email" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <PasswordField fx:id="password" layoutX="275.0" layoutY="300.0" prefHeight="32.0" prefWidth="200.0" promptText="Password" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <ComboBox fx:id="branchCombo" layoutX="275.0" layoutY="380.0" prefHeight="32.0" prefWidth="200.0" promptText="Branch" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <TextField fx:id="title" layoutX="275.0" layoutY="420.0" prefHeight="32.0" prefWidth="200.0" promptText="Title" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <ComboBox fx:id="degreeCombo" layoutX="275.0" layoutY="460.0" prefHeight="32.0" prefWidth="200.0" promptText="Degree" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <ComboBox fx:id="gradeCombo" layoutX="586.0" layoutY="380.0" prefHeight="32.0" prefWidth="200.0" promptText="Grade" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <TextField fx:id="province" layoutX="580.0" layoutY="180.0" prefHeight="32.0" prefWidth="200.0" promptText="Province" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <TextField fx:id="city" layoutX="580.0" layoutY="220.0" prefHeight="32.0" prefWidth="200.0" promptText="City" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <TextField fx:id="salary" layoutX="586.0" layoutY="420.0" prefHeight="32.0" prefWidth="200.0" promptText="Salary" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <TextField fx:id="iban" layoutX="586.0" layoutY="460.0" prefHeight="32.0" prefWidth="200.0" promptText="Bank Account" styleClass="custom-text-field" stylesheets="@../styles.css" />
+      <Button fx:id="addEmployeeBtn" layoutX="586.0" layoutY="538.0" mnemonicParsing="false" onAction="#addEmployeeOnAction" prefHeight="32.0" prefWidth="200.0" styleClass="custom-submit-blue-button" stylesheets="@../styles.css" text="Add Employee" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="14.0" />
+         </font></Button>
+      <AnchorPane layoutX="-4.0" layoutY="-2.0" prefHeight="606.0" prefWidth="225.0" style="-fx-background-color: #1565C0;">
+         <children>
+            <Button fx:id="backBtn" layoutX="24.0" layoutY="53.0" mnemonicParsing="false" onAction="#navigateBack" prefHeight="26.0" prefWidth="182.0" styleClass="back-button" text="Back">
+               <font>
+                  <Font name="Avenir Next Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text layoutX="275.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Employee">
+         <font>
+            <Font name="Avenir Next Bold" size="34.0" />
+         </font>
+      </Text>
+      <Text focusTraversable="true" layoutX="275.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Info">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="275.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="580.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="586.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

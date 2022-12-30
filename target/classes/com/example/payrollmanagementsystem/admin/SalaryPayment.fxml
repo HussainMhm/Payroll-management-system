@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="background" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.payrollmanagementsystem.admin.SalaryPayment">
+   <children>
+      <Text focusTraversable="true" layoutX="304.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Payment">
+         <font>
+            <Font name="Avenir Next Bold" size="34.0" />
+         </font>
+      </Text>
+      <Label fx:id="salaryLabel" layoutX="420.0" layoutY="408.0">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Label>
+      <Text layoutX="305.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Salary:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="305.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Leave:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="305.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave Deduction:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <Label fx:id="totalLeaveLabel" layoutX="420.0" layoutY="439.0">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Label>
+      <Label fx:id="leaveDeductionLabel" layoutX="420.0" layoutY="470.0">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Label>
+      <ComboBox fx:id="employees" layoutX="293.0" layoutY="250.0" prefHeight="28.0" prefWidth="175.0" promptText="Employee" styleClass="custom-text-field" />
+      <ComboBox fx:id="months" layoutX="480.0" layoutY="251.0" prefWidth="150.0" promptText="Month" styleClass="custom-text-field" />
+      <ComboBox fx:id="years" layoutX="643.0" layoutY="250.0" prefWidth="150.0" promptText="Year" styleClass="custom-text-field" />
+      <Button fx:id="selectBtn" layoutX="800.0" layoutY="251.0" mnemonicParsing="false" onAction="#selectButtonOnAction" prefHeight="26.0" prefWidth="66.0" styleClass="custom-submit-pink-button" text="Select" textFill="WHITE" />
+      <Button fx:id="payBtn" layoutX="768.0" layoutY="539.0" mnemonicParsing="false" onAction="#makePaymentOnAction" styleClass="custom-submit-blue-button" text="Make Payment" textFill="WHITE" />
+      <Text layoutX="305.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Name:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <Label fx:id="employeeLabel" layoutX="420.0" layoutY="332.0">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Label>
+      <Text layoutX="599.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IBAN:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <Label fx:id="ibanLabel" layoutX="650.0" layoutY="332.0">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></Label>
+      <Text layoutX="525.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Travel Allowance:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="525.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medical Allowance:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="525.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Allowance:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <TextField fx:id="travelAllowance" layoutX="650.0" layoutY="396.0" prefHeight="16.0" prefWidth="100.0" style="-fx-background-color: #fff; -fx-border-color: #9E9E9E; -fx-background-radius: 15; -fx-border-radius: 15;">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="medicalAllowance" layoutX="650.0" layoutY="433.0" maxWidth="100.0" prefHeight="20.0" style="-fx-background-color: #fff; -fx-border-color: #9E9E9E; -fx-background-radius: 15; -fx-border-radius: 15;">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="washingAllowance" layoutX="650.0" layoutY="472.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #fff; -fx-border-color: #9E9E9E; -fx-background-radius: 15; -fx-border-radius: 15;">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="totalAmount" editable="false" layoutX="651.0" layoutY="538.0" maxWidth="100.0" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #fff; -fx-border-color: #9E9E9E; -fx-background-radius: 15; -fx-border-radius: 15;">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font></TextField>
+      <Text layoutX="525.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount:">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Text>
+      <Button fx:id="calculateBtn" layoutX="800.0" layoutY="432.0" mnemonicParsing="false" onAction="#calculateButtonOnAction" prefHeight="26.0" prefWidth="71.0" styleClass="custom-submit-pink-button" text="Calculate" textFill="WHITE" />
+      <AnchorPane layoutY="-4.0" prefHeight="606.0" prefWidth="225.0" style="-fx-background-color: #1565C0;">
+         <children>
+            <Button fx:id="backBtn" layoutX="24.0" layoutY="53.0" mnemonicParsing="false" onAction="#navigateBack" prefHeight="26.0" prefWidth="182.0" style="-fx-background-color: #e3f2fd;" text="Back">
+               <font>
+                  <Font name="Avenir Next Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text layoutX="305.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Details">
+         <font>
+            <Font name="Avenir Next Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
