@@ -1,6 +1,6 @@
 # Payroll Management System
 
-Welcome to the **Payroll Management System** project! This project was developed as part of a database management systems course and demonstrates your proficiency in managing databases and handling payroll-related data.
+Welcome to the **Payroll Management System** project! This project was developed as part of a database management systems course and demonstrates the proficiency in managing databases and handling payroll-related data.
 
 ## About the Project
 
