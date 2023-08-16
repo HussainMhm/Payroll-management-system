@@ -23,28 +23,27 @@ This project focuses on streamlining payroll management processes using Java, Ja
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/payroll-management-system.git
+   ```bash
+   git clone https://github.com/yourusername/bus-ticket-reservation-system.git
 
 2. Import the project into your preferred Java IDE (e.g., Eclipse, IntelliJ IDEA).
 
 3. Set up the MySQL database:
-
-- Create a new database named `payroll_management`.
-- Import the SQL schema and data using the provided `.sql` files.
+  - Create a new database named `bus_reservation_system`.
+  - Import the SQL schema and data using the provided `.sql` files.
 
 4. Configure the database connection in the project:
-
-- Open the `src/main/resources/application.properties` file.
-- Update the database URL, username, and password.
+  - Open the `src/main/resources/application.properties` file.
+  - Update the database URL, username, and password.
 
 ## Run the application:
 
-- Run the `Main` class to start the payroll management system.
+- Run the `Main` class to start the application.
 
 ## Screenshots
 
-Application's interface and functionality.
+Application's interface.
+
 
 ## Usage
 
